@@ -21,4 +21,40 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
  */
 
 public class ReverseWordsInAString {
+
+    public static void main(String[] args){
+
+        String str = "    a          good example";
+
+        System.out.println(getReversedWordsInAString(str));
+
+    }
+
+
+    public static String getReversedWordsInAString(String str){
+
+        String[] words = str.trim().split(" ");
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = words.length - 1;  i >= 0; i--) {
+
+            if(!words[i].isEmpty()){
+                result.append(words[i]);
+                if(i != 0){
+                    result.append(" ");
+                }
+            }
+
+        }
+
+        return result.toString();
+
+    }
+
+
+
+
+
+
 }
