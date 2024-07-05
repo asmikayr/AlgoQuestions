@@ -32,10 +32,10 @@ import java.util.Set;
 public class LongestSubStringWithoutRepeating {
 
     /*
-    BRUTE-FORCE Solution
-    You would need to generate all possible substrings of the given string and
-    then check each one to determine if it has all unique characters.
-     */
+        BRUTE-FORCE Solution
+        You would need to generate all possible substrings of the given string and
+        then check each one to determine if it has all unique characters.
+         */
     public static void main(String[] args) {
 
         String s = "abcabcab";
