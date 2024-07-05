@@ -36,6 +36,36 @@ public class LongestSubStringWithoutRepeating {
     You would need to generate all possible substrings of the given string and
     then check each one to determine if it has all unique characters.
      */
+    public static void main(String[] args) {
+
+        String s = "abcabcab";
+
+        System.out.println(lengthOfLongestSubstringBruteForce(s));
+
+    }
+
+
+    public static int lengthOfLongestSubstringBruteForce(String s){
+        int max = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            Set<Character> set = new HashSet<>();
+            int len = 0;
+
+            for (int j = i; j < s.length(); j++) {
+                if(set.contains(s.charAt(j))){
+                    break;
+                }
+                set.add(s.charAt(j));
+                len++;
+            }
+
+            max = Math.max(max, len);
+        }
+
+        return max;
+    }
     public int lengthOfLongestSubstring(String s) {
         int n = s.length();
         int longest = 0;
