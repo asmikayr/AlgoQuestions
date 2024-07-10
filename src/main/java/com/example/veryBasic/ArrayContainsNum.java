@@ -14,8 +14,8 @@ public class ArrayContainsNum {
     }
 
     public static boolean isContainingN(int[] nums, int n){
-        for (int i = 0; i < nums.length; i++) {
-            if(nums[i]==n) return true;
+        for (int num : nums) {
+            if (num == n) return true;
         }
         return false;
     }
