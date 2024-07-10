@@ -30,11 +30,7 @@ public class KidsWithTheGreatestNumOfCandies {
         int count = 0;
 
         for (int candy : candies) {
-            if(candy+extraCandies>=max){
-                isGreatestNums[count++] = true;
-            }else{
-                isGreatestNums[count++] = false;
-            }
+            isGreatestNums[count++] = candy + extraCandies >= max;
         }
         return isGreatestNums;
 
