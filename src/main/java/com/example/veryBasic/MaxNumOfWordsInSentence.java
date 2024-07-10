@@ -19,11 +19,10 @@ public class MaxNumOfWordsInSentence {
 
     public static int findMaxNumOfWords(String[] sentences){
         int max = 0;
-        int count = 0;
 
         for (String sentence: sentences) {
             String[] words = sentence.trim().split("\\s+");
-            count = words.length;
+            int count = words.length;
             if(count>max) max = count;
         }
 
