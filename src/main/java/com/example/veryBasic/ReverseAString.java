@@ -1,9 +1,9 @@
 package com.example.veryBasic;
 /*
-
+Day 1: Reverse String
+Problem Description:
+Write a function that reverses a string. The input string is given as an array of characters s.
  */
-
-import java.util.Arrays;
 
 public class ReverseAString {
     public static void main(String[] args) {
