@@ -7,4 +7,30 @@ return -1.
  */
 
 public class LargestNumAtLeastTwiceOfOthers {
+    public static void main(String[] args) {
+        int[] nums = {3, 6, 1, 0};
+
+        System.out.println(isTwiceOfOthers(nums));
+
+    }
+
+    public static int isTwiceOfOthers(int[] nums){
+        int max = nums[0];
+        int maxInd = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+                if(nums[i] > max){
+                    max = nums[i];
+                    maxInd = i;
+                }
+        }
+        for (int num : nums) {
+
+            if(!(max/num >= 2)) return -1;
+            else return maxInd;
+
+        }
+
+        return -1;
+    }
 }
