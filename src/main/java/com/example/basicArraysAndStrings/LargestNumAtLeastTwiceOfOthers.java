@@ -24,13 +24,12 @@ public class LargestNumAtLeastTwiceOfOthers {
                     maxInd = i;
                 }
         }
-        for (int num : nums) {
-
-            if(!(max/num >= 2)) return -1;
-            else return maxInd;
-
+        for (int i = 0; i < nums.length; i++) {
+            if (i != maxInd && max < 2 * nums[i]) {
+                return -1;
+            }
         }
 
-        return -1;
+        return maxInd;
     }
 }
