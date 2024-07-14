@@ -13,10 +13,26 @@ public class FindPivotIndex {
 
         int[] nums = {1,7,3,6,5,6};
 
+        System.out.println(findPivotIndex(nums));
+
     }
 
-    public int findPivotIndex(int[] arr){
+    public static int findPivotIndex(int[] arr){
+        int totalSum = 0;
 
+        for (int num : arr) {
+            totalSum+=num;
+        }
+
+        int runningSum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if(runningSum==totalSum-runningSum-arr[i]){
+                return i;
+            }
+            runningSum+=arr[i];
+        }
+        return -1;
     }
 
 }
