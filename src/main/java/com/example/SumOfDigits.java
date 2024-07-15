@@ -16,9 +16,34 @@ public class SumOfDigits {
 
     public static void main(String[] args) {
 
+        System.out.println(getSumOfNum(123));
+        System.out.println(getSumOfNum(9));
+        System.out.println(getSumOfNum(1997));
+        System.out.println(getSumOfNumByDigitRoot(123));
+        System.out.println(getSumOfNumByDigitRoot(9));
+        System.out.println(getSumOfNumByDigitRoot(1997));
+
     }
 
-    public static int getSumOfNum(){
+    public static int getSumOfNum(int n){
+        if (n<=9) return n;
+        int sum = 0;
 
+        while(n>9){
+            sum += n%10;
+            n /= 10;
+        }
+
+        sum += n;
+
+        if(sum > 9) return getSumOfNum(sum);
+
+        return sum;
+
+    }
+
+    public static int getSumOfNumByDigitRoot(int n){
+        if(n == 0) return 0;
+        return 1+(n-1)%9;
     }
 }
