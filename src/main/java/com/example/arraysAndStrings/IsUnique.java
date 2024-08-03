@@ -14,6 +14,8 @@ public class IsUnique {
         String str2 = "abcde ";
         System.out.println(isUniqueChars(str));
         System.out.println(isUniqueChars(str2));
+        System.out.println(isUniqueChars2(str));
+        System.out.println(isUniqueChars2(str2));
 
     }
 
@@ -40,6 +42,19 @@ where c is the size of the character set.
         }
         char_set[val] = true;
     }
+        return true;
+    }
+
+    public static boolean isUniqueChars2(String str) {
+        int checker = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            int val = str.charAt(i) - 'a';
+            if ((checker & (1 << val)) > 0) {
+                return false;
+            }
+            checker |= (1 << val);
+        }
         return true;
     }
 
