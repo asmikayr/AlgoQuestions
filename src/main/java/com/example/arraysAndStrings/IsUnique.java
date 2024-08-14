@@ -45,6 +45,10 @@ where c is the size of the character set.
         return true;
     }
 
+    /*
+    Solution with a bit vector
+     */
+
     public static boolean isUniqueChars2(String str) {
         int checker = 0;
 
