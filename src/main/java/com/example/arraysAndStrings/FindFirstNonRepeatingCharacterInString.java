@@ -5,6 +5,11 @@ import java.util.Map;
 
 public class FindFirstNonRepeatingCharacterInString {
     public static int firstUniqChar(String s) {
+
+        if (s == null || s.isEmpty()) {
+            return -1;
+        }
+
         // Step 1: Count character frequencies
         Map<Character, Integer> charCount = new HashMap<>();
 
