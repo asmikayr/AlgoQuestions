@@ -1,4 +1,4 @@
-package com.example.basicArraysAndStrings;
+package com.example.arraysAndStrings.basicArraysAndStrings;
 /*
 Problem Description:
 Given an integer array nums, find whether the largest element in the array is at least twice as much

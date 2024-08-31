@@ -1,8 +1,10 @@
-package com.example;
+package com.example.linkedLists;
 
 /*
 Merge two sorted linked lists and return it as a new sorted list.
  */
+
+import com.example.linkedLists.ListNode;
 
 public class MergeSortedList {
 

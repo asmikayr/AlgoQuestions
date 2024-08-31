@@ -1,4 +1,4 @@
-package com.example.basicArraysAndStrings;
+package com.example.arraysAndStrings.basicArraysAndStrings;
 /*
 Day 1: Find Pivot Index
 Problem Description:

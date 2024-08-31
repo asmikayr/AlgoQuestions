@@ -1,9 +1,11 @@
-package com.example;
+package com.example.linkedLists;
 /*
 Find the Middle of a Linked List
 Problem:
 Given the head of a singly linked list, return the middle node of the linked list.
  */
+
+import com.example.linkedLists.ListNode;
 
 public class MiddleOfLinkedList {
 

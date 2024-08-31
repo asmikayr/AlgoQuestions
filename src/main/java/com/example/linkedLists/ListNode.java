@@ -1,9 +1,9 @@
-package com.example;
+package com.example.linkedLists;
 
 public class ListNode {
 
         int val;
-        com.example.ListNode next;
+        ListNode next;
         ListNode(int x) { val = x; }
 
 }
