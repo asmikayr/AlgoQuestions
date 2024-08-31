@@ -8,7 +8,9 @@ public class MaximumSubArray {
 
     public static void main(String[] args) {
         int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int[] nums2 = {};
         System.out.println("Maximum Subarray Sum2: " + maxSubArray(nums));
+        System.out.println(maxSubArray(nums2));
     }
 
     /*
@@ -17,6 +19,10 @@ public class MaximumSubArray {
 
 
     public static int maxSubArray(int[] nums) {
+        //Edge case
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         // Initialize the current and maximum subarray sums as the first element in array
         int currentSum = nums[0];
         int maxSum = nums[0];
