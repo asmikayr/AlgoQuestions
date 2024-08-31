@@ -1,4 +1,4 @@
-package com.algoquestionsAll.treeInOrderTraversal;
+package com.algoquestionsAll.binaryTrees.lowestCommonAncestorOfBST;
 
 public class TreeNode {
     int val;

@@ -1,4 +1,4 @@
-package com.algoquestionsAll;
+package com.algoquestionsAll.basicDynamicProgramming;
 
 /*
 You are climbing a staircase. It takes n steps to reach the top.

@@ -1,4 +1,4 @@
-package com.algoquestionsAll;
+package com.algoquestionsAll.linkedLists;
 
 import java.util.Stack;
 

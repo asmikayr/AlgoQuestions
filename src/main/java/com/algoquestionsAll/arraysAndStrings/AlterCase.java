@@ -1,4 +1,4 @@
-package com.algoquestionsAll;
+package com.algoquestionsAll.arraysAndStrings;
 
 import java.io.File;
 import java.io.FileNotFoundException;

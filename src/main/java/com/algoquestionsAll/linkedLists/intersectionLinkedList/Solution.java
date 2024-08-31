@@ -1,4 +1,4 @@
-package com.algoquestionsAll.intersectionLinkedList;
+package com.algoquestionsAll.linkedLists.intersectionLinkedList;
 
 public class Solution {
 

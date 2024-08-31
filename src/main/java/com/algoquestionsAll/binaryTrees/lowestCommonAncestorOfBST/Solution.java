@@ -1,4 +1,4 @@
-package com.algoquestionsAll.lowestCommonAncestorOfBST;
+package com.algoquestionsAll.binaryTrees.lowestCommonAncestorOfBST;
 
 public class Solution {
 

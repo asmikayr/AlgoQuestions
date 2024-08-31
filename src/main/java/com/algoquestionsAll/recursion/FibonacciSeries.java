@@ -1,4 +1,4 @@
-package com.algoquestionsAll;
+package com.algoquestionsAll.recursion;
 /*
 Write a Java program to print the Fibonacci series up to a given number.
 In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceding ones.

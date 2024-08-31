@@ -1,4 +1,4 @@
-package com.algoquestionsAll;
+package com.algoquestionsAll.recursion;
 /*
 Write a Java program to find the factorial of a number using recursion.
 A factorial is a mathematical operation that you write like this: n!.

@@ -1,4 +1,4 @@
-package com.algoquestionsAll;
+package com.algoquestionsAll.binaryTrees;
 
 /*
 Question-1 Range Sum of BST

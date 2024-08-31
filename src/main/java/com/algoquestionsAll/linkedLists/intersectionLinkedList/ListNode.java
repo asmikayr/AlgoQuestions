@@ -1,4 +1,4 @@
-package com.algoquestionsAll.deleteNNodesAfterMNodes;
+package com.algoquestionsAll.linkedLists.intersectionLinkedList;
 
 public class ListNode {
 
