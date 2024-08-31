@@ -4,11 +4,9 @@ package com.example.linkedLists;
 Merge two sorted linked lists and return it as a new sorted list.
  */
 
-import com.example.linkedLists.ListNode;
-
 public class MergeSortedList {
 
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode tail = dummy;
 
@@ -27,7 +25,7 @@ public class MergeSortedList {
         return dummy.next;
     }
 
-    public ListNode mergeTwoLists2(ListNode list1, ListNode list2) {
+    public static ListNode mergeTwoLists2(ListNode list1, ListNode list2) {
 
         ListNode temp = new ListNode(0); // Dummy node to start the merged list
         ListNode current = temp;
@@ -51,6 +49,39 @@ public class MergeSortedList {
         }
 
         return temp.next; // Return the merged list, skipping the dummy node
+    }
+
+    // Helper function to print the linked list
+    public static void printList(ListNode head) {
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        // Test case 1: list1 = [1, 2, 4], list2 = [1, 3, 4]
+        ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+        ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+        ListNode mergedList = mergeTwoLists(list1, list2);
+        System.out.print("Merged List: ");
+        printList(mergedList); // Output: [1, 1, 2, 3, 4, 4]
+
+        // Test case 2: list1 = [], list2 = []
+        list1 = null;
+        list2 = null;
+        mergedList = mergeTwoLists(list1, list2);
+        System.out.print("Merged List: ");
+        printList(mergedList); // Output: []
+
+        // Test case 3: list1 = [], list2 = [0]
+        list1 = null;
+        list2 = new ListNode(0);
+        mergedList = mergeTwoLists(list1, list2);
+        System.out.print("Merged List: ");
+        printList(mergedList); // Output: [0]
     }
 
 
